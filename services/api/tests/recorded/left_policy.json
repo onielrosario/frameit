@@ -1,0 +1,86 @@
+{
+ "candidates": [
+  {
+   "content": {
+    "parts": [
+     {
+      "text": "{\n  \"content_assessment\": {\n    \"is_political\": true,\n    \"political_issues\": [\n      \"healthcare policy\",\n      \"prescription drug prices\"\n    ],\n    \"interpretation_risk\": \"none\"\n  },\n  \"signals\": [\n    {\n      \"category\": \"policy_framing\",\n      \"direction\": \"left\",\n      \"strength\": \"strong\",\n      \"excerpt\": \"guarantee health care as a right, not a privilege reserved for the wealthy\",\n      \"interpretation\": \"Presents healthcare access as a fundamental universal right requiring federal intervention rather than a market commodity.\"\n    },\n    {\n      \"category\": \"actor_characterization\",\n      \"direction\": \"left\",\n      \"strength\": \"strong\",\n      \"excerpt\": \"choosing their corporate donors over working people who are rationing insulin\",\n      \"interpretation\": \"Characterizes congressional Republicans as deliberately sacrificing the well-being of constituents to protect corporate benefactors.\"\n    },\n    {\n      \"category\": \"loaded_language\",\n      \"direction\": \"left\",\n      \"strength\": \"moderate\",\n      \"excerpt\": \"drowning in medical debt while insurance giants post record profits\",\n      \"interpretation\": \"Uses emotive contrast between suffocating personal debt and corporate windfall to provoke indignation.\"\n    }\n  ],\n  \"propaganda\": [],\n  \"limitations\": [\n    \"short passage\"\n  ]\n}",
+      "thought_signature": "EvohCvchAWkUfROdZd1vs1JSxA28j5Z5Zgi-xDQOBWl0sO7FimBqa1C3TUet3chWdVmvZH6rP_s4BcJ0QPIWOIXKY7m5UAZsEnGhFKoVjzukqLUQtQCYiz4Euyxd7LSxZD0xP5-wo1TCf6KbKuea-hU5IsUrIBwKxW5ss46DYoh655X3OzdSD7bKGOz3ColmQbsxSfvPyEnJzhjEXqlR6dhfLHN5zLZTpiemS9Si52-R1SPqi_92D95t_WrTVcicjp6diSPRB_8U7DiM0n_aDxOnr3I6-rdLpdfyTPusea2hkdBlIxYzGy78lGyMrHSnsEPrv8db_LGo_gQ8LZGqtrhkZJ1Nm1-dftQW4aovRg429E7YrvrgGki0rUo0cx6hat22aKCrR-jwZgKLMMrQDCvNyZ2ftvZMKz0imToB3p77Oe7FS0SOEexjh1Mp3MWsbiUygudKWvlL4YorY77DOwdjJRYXdY0T3W8RErhGCFpEindCiO2D_h6ao5dAhutoti2Y2cH7Fu_pwwBTM7hTYmRc2DGXOxrDnPEV76VdXBLhbAzy6vP1Dd2ZhGOopcr8lvW0MfFZLWa717gEM-OW5p9fHCGfWkmeN37Z4KQlUiIiqUxz5fAcuBIgp7WkaUuxcpChbVXZDNTggSDedH--HBSsoAvjd-LYlkGEneQXogYE970xxvFx96F-vMRbUY16JlivzX2I8Owmnow4Uf-S7i8K3lKbynH4hX_2TJpiHV_E9KyODlz2WdQjN2sbvAc5IT_Fp9isrsndCbpt0GelZwMKSSQQnXTg5YmyJzrwBL6k9ntPNep3PAGnrInpoitNpNO5FtsTSsNLwr24a-Sp4jwizYIhbQ_jPXkHiZ6i94MqZ_8nOpKdCmRf5k-sixLO_r62m3p5JViLN7kv1vhLrfS19kNttK-xljeXIIF2Hk0hDK0bFTNmf_i0jJ8w8-Cgqt4MusgPri0n9MfOHvxuvYbHGdMeQye7-zmuvoe4Pc-e9Qjou96EyWZFeB3ROPyRizYhlR7_4uhZw9DkywgGkXSRFTWkIAA6ukALyfwPqLxa9AJb-XHVDU4SyHazN3qfbDpHOYLJSfSqC9lJOEWCWF0EOr_khg-HLQCMSyFQXxcMdkMorBiS8du1ZFeL9jlZ9UhON9Kji2fRL5xNIdE0bIDWv0iO_MSYGl8X1zLZEdz0lRgPv-x6__guszh_GOccmjbMoOqc__Off4rPLUp51tJLQCOdzLaNzSlLdLhgY-sxqgNF-iMCCgyZGnl24fbGFDOt9cts3GRGwOEJxtX7VXoVfFw4V_OW78jbQq0N7kBfitimOS5oRVRRYZ72E7jEQ9dRan4-riWLq7UEDLP4BCvtIVqj9NrmoUB6BXOjTH2OfFAFTcdGSX-zBnXQ5olcnc47_vCTTCUq298ATI41Syh7g2-wNGB2oB6JU12u7-MBMYCJH0Zj0OJ4yjLcAstZmT0s5LKwGcZIPFx6t92jHU7QsI35PB2mPubkJJizfyWc1OwP2NsT2zn-_lntKbsE7KCJFCGnHytCjLjCIMwxOLRvo3kIsazyb2gJcyKX-ZjpCLHzz2hvCGZetyY0GZP5Y7lsJj6_u_3dnueKz0rvydfjWZLMalh57C4h2_n_TjK7YrJWfsnncohm3_kl7RXnry9ybnZVZu2RHOEjpJgZqHAvf-hpY1I4DOQgWWkg3fSxSz849UpwK1qsBgbrsoiboQ4eEgWeMWQNy0UT-0ljw5iGh7q0FW4VhqAqej-fsPF4GTMvcX3JSzjdgmZwnyaJ0uL5A1QYeLbCGIE_3Uas176rrh7HRpVMJ0p3OO7tfUPgIPbX155zgguHUy-GvL10nn5dByVGXZEPDh3Ty74CmHUI-4MC05g9iJxsEHyPGVqm9PADuXtyxJv8dQQbH1wnASewTYAp9BRe2WJXzgXnVTupUYNUI4Uk3mSEp6ic57OtNmZmyGUYDGG2of2OwfPFKeqiFtcZgWp5KuKHcWm9nfj9XIvXioWZOyyo3o704iMv2E8i2jAN9mPzD7Ny1DA2WdKuM78ijL2HYMNLrVO-cPLb71fjFHJkgYpSSaBkNnyiHHb-UG57TcQlh1YWiAdS6tS64yBtMNqBGwfVpweLbDVMwrrGN3cJXjS9lSZtxxmglnYODMgriFRl_fbFh6rMZPtPKYs_z6GzpB9M5Ncbrlt8dKLXgMBTkD97ekpTZBQq_l8cClUdIsZvHH7Zz0ds80oiVqNVfHEWOdTiXPopNV-wojclAJbH--X8vUwEn8QOdrPfkKo5KI_3kycakoDw4Eo6TNF_T7wvWAWTebab0yYCMPs9hknqZ7mLVHV6hPoQkFkYEMHkfoO0tEpk-kiXe8TjC5jf_694zDJ6_reEFpPvuW-Pfdd0bjdQyFjYqrcRYg6xZEvBQ3eX1aJvbrKQjoJL1d-Q4w7zNfCmHjmiWqBjGwCSY4DkDxjWKOUisubzK4YZGpR8E7uSiomO-ZWJgW_WscO-Y9Uf334ck2zFE32XusNeRtepi9sJzbKbGAjKN6stSZuuubhUittEbFLwLSdBztJdnXYduwjVDfPNdgwoPCJI3rUetv_2GI2SGiJGEYc5ULboGPYXAQ_siosOLz0gStI9oZ1A1w1-Wv_iyIAGUlJLsOLruf7WOegSpSBaSlCARQFttz39m2CU3zpxS3CWKpFeWMjHjDBo4evhg5gpzoCbiGHzrghaOrG1sk61VK6f75NeoS51AdBiKS6FBnSpTsDvQ_4ji7WiP2Hrx1TnyPzNDCGLS7_FeVpgE2qlKHl9JISQ5P_YCI-BZw_XMcuupXgKbyfz7p8MGBft5iKj7Yek16TBzLZQkpLqoGeXcgNeFBxivGI19cqUKX3Jb5E9kNnKYgfQGEWxoNoop7WMUWupL6SjYGxz8LP2zopqoFetp2xUYw9PkiwHFAPm5NcyUxPJu3T_347gG8_6T5Vll3e7JOdLsZ4sWprbdTI9ku1cKgDEkMoExvpboxTjvS8-QANGWcN8J1fQaGMAaGsvMgGFGThrTPsqVJPxJwAhYpBUWQdKHIz_IsgVmrB2yorFWZLhNZ-vivFhy9qfyiTBnhOgjhkSPFVK4_6m8_TienW8_MRYL62kEs8jjgfZG4RXu27fW_GYjlYtpst6DjO31osChwA6XfxtgUcW944mf-nT-SQykYBzwTmd8MZohcn0-8izvouAhhXgQa0YRKVeKHUyQ40pnoBbM68rl4umQZxowj80AQ2rUTmzk-FFvao6vTWsQPVz2UHSJFNU4XdaibsYrI5X_6KZlndhLqDDQuIJZKDsbz3Jhdp3Le-yy-bHPgAg-XSYnu7-Ie-d0bM5VRJkMCuEhfpmP2W7scdxr1WubXtnj5Eml7nbRJrO7PYsNfml7KgUhNDI9f5s8FpLIh7y-ovf9cFrTmj2PC7zk72i9q3AG--81GEUCGixnu-2LKdlRDP9G27TJENcIQi3aGZm2MKk5OIHN6yE3GjvIpUnfRAwJeG4Izs4yt6vDl_qAQwbJzhwS7__e7xki3DHQeJDH3y-xvwey_1-CXtkqsOWNPfW2g3IuiBXUB9axt7DfJLemvxoBfEeprzwhk6IcH3Dn5HzqW01QMdD5or1tjTPpA3DjIz-dgkWveYLsIobx1LPaR5e7qDl8jhWi_cZvGAms95azbPctnyf5qrg8wk5gOKbaQbU3gLn0aUDaxEeKOoQM2EQnEjvVwKijUUtskU-U1fJXyuICnGZGI7-cH_jNKiDVBC3gBEkQ2nu3Hp5lChw-oJt7J1r8nQs9KAp3gFPYOzJSB5OV1YgidRwwjEipqoD0ZQAc_ew7D_gcO1P7NYPOZLq5OPkVUDUpt0o_bfkD9Ck4p3mRss7sWvMS5_vDyPjW9J_W5Dch0-iUhnu0oJnhKSoTYk8IEaEaz7TB7-Hln-pWjAtadM01cqm5F2Tlf7gwVRVmZOJVi98fFie_hF6Mo68dn6V6o9bBAlG5ksfdZMIvZF4iwSB3QKgw8t70h3AtlATrw6gQ2Welkco1gefJdyYdinMlYEqTgczLnRNvBQXR-59dwsJGfv3kAFIg3-Csq1uLy4y93bPGDTXP_krWf91fC4RfGBkSIPsN4xUbEi885VpxUjHyIITd1i1A5E64CetfreUnX945yJ18QH2q-2D-urBtsSInnCrSDyqB6ZnPw_O_xfo-JthFOYwybpY_OMjgxcx1gPsYGvlnB3NW1YkTQMArMsKqh2CcFOno7hwLjWAF52x_VQHRYuucGpHoVOnOFJmAXBuVParzudcjkjNskZY9KtRFx7S7g9gZOhu7naZVQt4ouyitrW_JCtO08M7U2fmQMR3KKA3FdM-1pKPOrXU2rzVfnx64MkgDl4Tjf8lFOg2uEIwLI27NUQIVGCMZVHRVRkKaFrSQeANnO-vgUqBNJqsyk5oFS952jB9csSfHreTbIK5wLjS-Zn63VHBvEZKiF7aVM_fqhVwWjOkdD7TDYAhU5T_aSivW_vTWkqi_q-bFQQMiItLZp666SSbjTDhtgPZmBahGB3c3IJ3vH9OwNCONDchfrijdnY-InvYJI8TDXlekrVnIObBzHA1gujnm_A1QUY_bq6cu8tsBT0WLz4dNwHX-6h-QtJK-wTDwX0JF8sNq1-wYzNVlTrWTvdX3pvsQ_-0gqXxXdVdFVwrMcGdQinyj6VGH637KVpT_6dYao1eSsEvWQdsJnzzrwc3wGFPJHc6yHNP_WjihN41YEuchKAInGm7gbe2qY8NxOxMyIMl-OK8KTg7GxYuSFzED2ZLVgtHdWBXN9GsopDBcxxP-NFKcFieugaKPruQlcQaqnb6W5BdKrSD3fA9lJ_2Df34UQ0FP3H99_3KQ81JyFMNETM8vfmGSot8eLlvB9X-CqXiPs_0Fl_zsutZU99vtPaAAfevojWHOz3tjwzhGxA9FXx6kkBUpSVbz0w5dcTOJm89iYuNkh3izGVj0YzpAx2nB0uIyF81YTW8jOxOgwkmWMTzQORdSDwCyeDfmrm0Th5DofxwKOArvrPmpUqgTkWVzkvvrUBWut8_eZV0ROEzNHtIRx42eiboPNz55_EQ8OO16oYmA9E13endIlCDRiYPluTZ36HT3sTMdrqiZhTe8iYj0o1I5cxu31b0QhAlGq6qjtZap8m4HfpL6whl40-x0wVh-UoHGqPJsZDRPasbZ9dE9cD3oqsT9ApTdqIl_GoFTOVX3rnMAJjyW_LxQt35MWqMJvdCYMlrSMJ8GVeFay8-_uoV0B60Nno8fhHObpSHjiKeNbClYqO0PL78Vn7CWZ9SGyGjDs37bu7Bd2dJjak3cyLBFl5qYkZjDNdoq2P6mJUoaHRy6ZqaHzzAanojF-tk3YCrczuqq1OOMJlMGtpRZJx7uNR4RRhJd8B4350vo3aT4ZybNiz0ruvO9mgy0ZPKxqvfqkrLiRMUSSuT6le8Lk4xWvv3NUj3Rx47KOhc4A_dKH6Duh5Qqrq8Q4LuMI8197xMRv2RRZSABL67KcdKUJv92iU9_DsVd8FauSiR1DHDEQhO4VMNr7x3plQaFM414CKK--YsqkkIqP5vwPm4P6cttQhzWEzda3rFNkZLCdaUSQ4YGXcnnfFoms542Z1zjjswNElmPXjkRP552qlPCM4njdyNbd0YUQqvoEr8oPcJZ6WtRFEJUqfTk6E-7CJxvJNkQvfJj3aVsSjE-xWe3pFYBDWL56wc8cJAuHCHtOjytRaC9TwMtuyUJB6fz3vUQQpuZCbwkJGOSaAo6shYz7gYzwB0F-hs7W4="
+     }
+    ],
+    "role": "model"
+   },
+   "finish_reason": "STOP",
+   "index": 0,
+   "safety_ratings": [
+    {
+     "category": "HARM_CATEGORY_HARASSMENT",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_HATE_SPEECH",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+     "probability": "NEGLIGIBLE"
+    }
+   ]
+  }
+ ],
+ "model_version": "gemini-3.8-flash",
+ "response_id": "_Zu8apizBved_uMPzdvzuQQ",
+ "usage_metadata": {
+  "candidates_token_count": 316,
+  "prompt_token_count": 1286,
+  "prompt_tokens_details": [
+   {
+    "modality": "TEXT",
+    "token_count": 1286
+   }
+  ],
+  "thoughts_token_count": 959,
+  "total_token_count": 2561
+ },
+ "parsed": {
+  "content_assessment": {
+   "is_political": true,
+   "political_issues": [
+    "healthcare policy",
+    "prescription drug prices"
+   ],
+   "interpretation_risk": "none"
+  },
+  "signals": [
+   {
+    "category": "policy_framing",
+    "direction": "left",
+    "strength": "strong",
+    "excerpt": "guarantee health care as a right, not a privilege reserved for the wealthy",
+    "interpretation": "Presents healthcare access as a fundamental universal right requiring federal intervention rather than a market commodity."
+   },
+   {
+    "category": "actor_characterization",
+    "direction": "left",
+    "strength": "strong",
+    "excerpt": "choosing their corporate donors over working people who are rationing insulin",
+    "interpretation": "Characterizes congressional Republicans as deliberately sacrificing the well-being of constituents to protect corporate benefactors."
+   },
+   {
+    "category": "loaded_language",
+    "direction": "left",
+    "strength": "moderate",
+    "excerpt": "drowning in medical debt while insurance giants post record profits",
+    "interpretation": "Uses emotive contrast between suffocating personal debt and corporate windfall to provoke indignation."
+   }
+  ],
+  "propaganda": [],
+  "limitations": [
+   "short passage"
+  ]
+ }
+}

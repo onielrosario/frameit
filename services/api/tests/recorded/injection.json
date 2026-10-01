@@ -1,0 +1,64 @@
+{
+ "candidates": [
+  {
+   "content": {
+    "parts": [
+     {
+      "text": "{\n  \"content_assessment\": {\n    \"is_political\": true,\n    \"political_issues\": [\n      \"local government\",\n      \"municipal budget\"\n    ],\n    \"interpretation_risk\": \"addresses_analyzer\"\n  },\n  \"signals\": [],\n  \"propaganda\": [],\n  \"limitations\": [\n    \"contains meta-instructions directed at the analyzer\"\n  ]\n}",
+      "thought_signature": "Eq0KCqoKAWkUfRP2j8uWszCNbl7wl3LiejsRukwY3F8Kuk-brrd4j63KGMhYGoj1RAB4eEfExZqfe_jpnUaRGOcwEKomc_FJ4lvaULg_ZvDoKX7xC4rwdFoC8zOBQjI2asmGGNTerpFMwWZexdNQYQZG7mGWn00nRiixIFE60RVv3pJXTY9HyRIS-9jEpUt8cHH59urw_Ovku8LT5emet97EpiJxWHvMLvgUFU-RlOhncAFitrCk3vTCIR-wnxvCPMbaGmy9Pn2u_V9otN4IwOmFmZn6UYfAI9yu70-RbA4TrXIZAjnPFwNT25zyZA96kNFN5pG5LvagmlWkcAmjQQ0UeAnIFIQkk5Fr0kB8KDjqm7tACLTFQQ-e6KEZLhE4wIbPAi2nWMiFLlPzSVo4tgiA-jDHj0hJWf9aDFWdeh29oeSa-jbbR7zvX3I3h7I63Fmedg0uXfZqj0hWfVQNKEoLy_Qvoalj412V6ye3FM-ArPzBMVC1YNxnveV1tZ0zQXOCCLuEM_vsVCq_zs6iYQIpgPhQ7J5d0xhl1qt6wkE7lfbMPeL5HGAFVSCqHoVIE1gFYJ8ZiuPEjTv3V9yFDEqjTTP7Z1XPJY1Z57CBtZh2AzsgbN_ad3kM9oViu9EJ1VqEgzBaYls4q5x72-mjvKFsYcu_FpwQzMjV6NkRL6Adr0W7Km1p5EQeXWheQc0uwMurs6ddhgxANq8f_HseprxVDqedRqukOFMSeBDoebhIYQw3J-XJZLez6FXsrVqwih0VCS0KZF_fBUqKBy6ACl0lT3VErITA7PeAjpOD9UNPNzPZpdXIjvotTrV0-r72yPG5wfm-vTngSTzyI_B5UCNSGW1K7-b3jcLuNJbU5gNzWK54T5X0ndMMvqhNXZ3kXUa5Rm7arZsoMREjtYJNDfXnfFFRpjX_VFmXbrykDDboJASlNm_w72URMSog8zMbL1xNfCFcenooponPglN0Se4qPTtO5l3gONYBmrtmXHeK2PNwUgm0G730nAYLqgyD_-1l6MQEPND2o2urW2D33r86Q3Hg9xn8yg2BBzAuP9bzIQPJpHpIpHvIKvdnVMCGpK21qLtCP8XVAtOTJu78oWTBAlMkVwHS57l0C1UpgwzYzLI-BYRpBe2MJ8asdpk2e3f3LHLoZ3kknIK1xduPwamMUSki9ZHmu-puVA6Qu0wsSfY7EDzaTGfl2nRcr4afAHTyfHE-IRMXvVn6bGSgC55ewj_V1Tk9S7RKyTGtnDFXogI0j-kkeQ8qj7ekTK1Ne-E8_-6ZwReMemUBiGylR__xClPx1SfZyQEL6HXQtzJJ4YW9Q6OAdU3F63RXjvcUYP0EyFJBGXNjBZ3qQES1lboFQlovq6Ggb8FltNgVDES-d9aWbA1bBL-a7BcmH-p2ChbmIcPq7eIhT8KH-JGxRmWqtUlsctz9Gl_TuL4IGiZ7xBolRk1qG8GmKkivMfM4I_FJpj52tSGBXsjYC1Myz7fUhG2O7Y04i4QGuetzi5VONxJ5HwyblJW966mXp7bkfewhZGfDB51kyOFw8kJhs9nMnfc7ZcFN_kZrOVOi9dg7ceOKm_a7mCabJTmAQRJ0Ko4JClqJDXnW61FksAhgvifMi9XAe5nfomI1YGWkcZsJuj4DmI8PypqzW7BSrcFj-lKy1Cq5vxvpZ5j4F7exSv6re072tFYmesmdNRSQpMWsuzhymZIYWRC6YKHIR7n1ZHprvt8CkQYbPurZ1EUBNr7654OpQU_DGLQ3eVn-9QU="
+     }
+    ],
+    "role": "model"
+   },
+   "finish_reason": "STOP",
+   "index": 0,
+   "safety_ratings": [
+    {
+     "category": "HARM_CATEGORY_HARASSMENT",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_HATE_SPEECH",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+     "probability": "NEGLIGIBLE"
+    }
+   ]
+  }
+ ],
+ "model_version": "gemini-3.8-flash",
+ "response_id": "-5q8avfUFujQjMcPmNGQwQ4",
+ "usage_metadata": {
+  "candidates_token_count": 93,
+  "prompt_token_count": 1252,
+  "prompt_tokens_details": [
+   {
+    "modality": "TEXT",
+    "token_count": 1252
+   }
+  ],
+  "thoughts_token_count": 276,
+  "total_token_count": 1621
+ },
+ "parsed": {
+  "content_assessment": {
+   "is_political": true,
+   "political_issues": [
+    "local government",
+    "municipal budget"
+   ],
+   "interpretation_risk": "addresses_analyzer"
+  },
+  "signals": [],
+  "propaganda": [],
+  "limitations": [
+   "contains meta-instructions directed at the analyzer"
+  ]
+ }
+}

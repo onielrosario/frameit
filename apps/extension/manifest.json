@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Frame It (dev)",
+  "version": "0.0.1",
+  "description": "Select text, right click, Frame It. Development build \u2014 no analysis yet.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6Efw0bPIhOda7Mwqm45Tbtx5s8plUuyDxJypSg502p207DIMLT4894xbbjMYibQ5TMmAxpvGOzNc8VgLCPlEf7m796+FbJTuMxmNfxKfTGJZ69bp4spFF5n9RnDPJHLGMCUT6lop2uPRHBYO8oYpSEr6dFPaMCuyDrMyrFl6ciLQ466zA8QE/uQbSyeV3Fzj6e0fVX7WYjrHk5Cs86DqLRkh1hYqOoSpPusUn9CTBTJYp/A+UlplNtR8LgaKZUXE1AkU7gT/UoExgtheCGMx6plevxiHH4MlUT4BRreq7lqcKWX300L9Ry3PPByiJlXN4X2nzIAhJkWw5yquCBD5YQIDAQAB",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Frame"
+  }
+}

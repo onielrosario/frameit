@@ -1,0 +1,22 @@
+{
+  "_instructions": [
+    "Write the pair by hand. docs/evaluation.md §4: same rhetorical structure, same",
+    "loaded-language density, same sentence shapes — swapped actors and policy direction.",
+    "Do NOT mechanically swap words; a mechanical swap produces unnatural text that fails",
+    "for the wrong reason.",
+    "",
+    "Write B immediately after A, before looking at any Frame output on either.",
+    "",
+    "Then: python marketing/mirror/render.py --api http://localhost:8000"
+  ],
+  "headline": "Same structure. Opposite politics.",
+  "subhead": "Frame analyzed both passages. It does not know they are a pair.",
+  "a": {
+    "label": "A",
+    "text": "REPLACE ME — the left-leaning passage, written by hand."
+  },
+  "b": {
+    "label": "B",
+    "text": "REPLACE ME — its polarity-swapped twin, same structure, written by hand."
+  }
+}

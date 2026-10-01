@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=77"]  # 77+: SPDX `license = "Apache-2.0"` string
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frame-api"
+version = "0.1.0"
+description = "Frame analysis API"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+dependencies = [
+    # Upper bounds on the major version: a breaking release should be a deliberate
+    # upgrade with the tests re-run, not something a fresh install picks up silently.
+    "fastapi>=0.115,<1",
+    "pydantic>=2.9,<3",
+    "google-genai>=2.25,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "uvicorn[standard]>=0.32",
+    "pytest>=8.3",
+    "httpx>=0.27",
+    "ruff>=0.8",
+    "mypy>=1.13",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+# The prompt is a file, not a string literal (architecture.md §6). It must ship.
+[tool.setuptools.package-data]
+"app.analysis" = ["prompts/*.md"]
+
+[tool.vercel]
+entrypoint = "app/main.py"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]  # so plain `pytest` works without PYTHONPATH=.
+
+[tool.mypy]
+python_version = "3.12"
+files = ["app"]
+disallow_untyped_defs = true
+warn_unused_ignores = true
+warn_return_any = true
+ignore_missing_imports = true

@@ -1,0 +1,59 @@
+{
+ "candidates": [
+  {
+   "content": {
+    "parts": [
+     {
+      "text": "{\n  \"content_assessment\": {\n    \"is_political\": false,\n    \"political_issues\": [],\n    \"interpretation_risk\": \"none\"\n  },\n  \"signals\": [],\n  \"propaganda\": [],\n  \"limitations\": []\n}",
+      "thought_signature": "Et4ECtsEAWkUfRO9a0N-sfuuAe_uKQQr5erg9ztDwY1PINUYXNpbApkQAQ9oottj88Xm45Joc9qC5tmt7v-nt2MmmqNUC_a_q2URNFY8OHRKq9tjMyTcoL-eGss6tlDmS6VrdUe1fKQEsOh9cIGf1CFylQnO9F8GWdrRkDMnWlAVKS2kMzKB3nJAcIqQlustjEwuZ2uTmdra9PoIX4qnaKS5P_77cJXpMUotRym0mG1Ohe80Bz6LqxPnMdbK9yxivOt9visTkWBVdqw6HqYcF1NIlP1h3YQmlSbdF9XTquGEJCFYTekMwQpUwT6ynOc1Et_NGdHT9C1_q58N4W1r4Te_RH264l1__G80ek9Jq0m0DXtubpxc3lX8uG_mpx7IdSimXO_qRAjOADHkzqVAVopB6XlXtwSxuSQMJXcoDcEVuSQJux43X_S7pstFVh-ZKc6FhTmSUaJ3xTjLqJmKUc8E552pbfR0voNb6l7w5asGZaDTrS4rL0au-y2rOxa-0tMXb-IM7id0DhCGhxQ08uuu9gehhg6BTg-MPlvhXSuTeCV0fqS8dRiYT9mpAD8OBJih3-EHWSyCG5a_VfVeA9eX58VbRgMdmoSN3zcUS5tjYm04fV5qTpzmnm-azl0Ptssp9vanaQiEQWqzdn5xMuXEB_VrHcykhUn4DGsgftmAdrh7zU_piVQVMYeFvK9NSe21pF9BX8cUHfdilAMIc035h5fvfESG2lF_daoepq9LP9q73pbohF7y0rR9oLi8edEsdK-h9sokMIETKr5kFGf7p9-bOiTbrfw3_nH_LJrr"
+     }
+    ],
+    "role": "model"
+   },
+   "finish_reason": "STOP",
+   "index": 0,
+   "safety_ratings": [
+    {
+     "category": "HARM_CATEGORY_HARASSMENT",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_HATE_SPEECH",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+     "probability": "NEGLIGIBLE"
+    }
+   ]
+  }
+ ],
+ "model_version": "gemini-3.8-flash",
+ "response_id": "95q8aojjAom5sOIP05GK6AI",
+ "usage_metadata": {
+  "candidates_token_count": 61,
+  "prompt_token_count": 1261,
+  "prompt_tokens_details": [
+   {
+    "modality": "TEXT",
+    "token_count": 1261
+   }
+  ],
+  "thoughts_token_count": 132,
+  "total_token_count": 1454
+ },
+ "parsed": {
+  "content_assessment": {
+   "is_political": false,
+   "political_issues": [],
+   "interpretation_risk": "none"
+  },
+  "signals": [],
+  "propaganda": [],
+  "limitations": []
+ }
+}

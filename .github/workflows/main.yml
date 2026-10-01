@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# No job needs a secret. Tests replay recorded model responses; nothing calls Gemini.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    name: API + evaluation (Python)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: services/api/pyproject.toml
+      - name: Install
+        run: pip install -e "services/api[dev]"
+      - name: Lint
+        run: ruff check .
+      - name: Format
+        run: ruff format --check .
+      - name: Type-check
+        working-directory: services/api
+        run: mypy
+      - name: API tests
+        working-directory: services/api
+        run: pytest -q
+      - name: Evaluation harness tests
+        working-directory: evaluation
+        run: pytest -q
+
+  extension:
+    name: Extension (TypeScript)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Type-check
+        run: npm run typecheck --workspace apps/extension
+      - name: Tests
+        run: npm test --workspace apps/extension
+      - name: Build
+        run: npm run build:extension

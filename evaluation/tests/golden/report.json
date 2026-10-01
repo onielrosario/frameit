@@ -1,0 +1,64 @@
+{
+  "abstention": {
+    "correct": 0,
+    "not_applicable": 2,
+    "over": 0,
+    "under": 1
+  },
+  "blind_labeled": 3,
+  "directional_agreement": {
+    "agreement_rate": 0.5,
+    "band_adjacent": 0,
+    "exact": 1,
+    "other_same_direction": 1,
+    "reversal": 0,
+    "total": 2
+  },
+  "errors": [],
+  "evidence_grounding": {
+    "grounded": 2,
+    "rate": 0.6666666666666666,
+    "total": 3,
+    "ungrounded": [
+      {
+        "excerpt": "not in the input",
+        "record_id": "ev_u"
+      }
+    ]
+  },
+  "generated_at": "2026-01-01T00:00:00+00:00",
+  "in_sample": true,
+  "label_provenance": {
+    "human_blind": 3
+  },
+  "mirror_symmetry": {
+    "failures": [
+      {
+        "categories_match": true,
+        "confidence_within_one_band": true,
+        "label_symmetric": false,
+        "pair": [
+          "ev_l",
+          "ev_r"
+        ],
+        "propaganda_matches": true
+      }
+    ],
+    "pairs": 1,
+    "passed": 0
+  },
+  "propaganda": {},
+  "sample_size": 3,
+  "split": "dev",
+  "versions": {
+    "analysis_model": "<mock>",
+    "api_version": "0",
+    "dataset_sha": "0000000000000000000000000000000000000000",
+    "fuzzy_threshold": 0.9,
+    "normalization_version": "0",
+    "prompt_version": "v0+0000000000",
+    "schema_version": "1",
+    "scoring_version": "0",
+    "taxonomy_version": "0"
+  }
+}

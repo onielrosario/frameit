@@ -1,0 +1,17 @@
+{
+  "name": "frame",
+  "private": true,
+  "license": "Apache-2.0",
+  "version": "0.0.0",
+  "description": "Frame — political framing analysis. Monorepo root.",
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build:extension": "npm run build --workspace apps/extension",
+    "dev:extension": "npm run dev --workspace apps/extension"
+  }
+}

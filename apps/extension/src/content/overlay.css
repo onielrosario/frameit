@@ -1,0 +1,150 @@
+/*
+ * Styles live inside the shadow root: these selectors cannot escape and
+ * host-page rules cannot reach in. `all: initial` on the host (set in index.ts)
+ * is what stops inherited properties crossing the boundary.
+ *
+ * Everything is absolute — no `em` off an inherited font-size, no reliance on a
+ * reset the page may or may not have.
+ */
+
+:host {
+  all: initial;
+}
+
+.panel {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2147483647;
+  width: 380px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 32px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #14161a;
+  color: #f2f4f7;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px 8px;
+  border-bottom: 1px solid #2a2e36;
+}
+
+.title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #cbd2dc;
+}
+
+.close {
+  all: unset;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #98a2b3;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.close:hover {
+  background: #2a2e36;
+  color: #f2f4f7;
+}
+
+.body {
+  padding: 12px 14px 14px;
+  overflow-y: auto;
+}
+
+.status-line {
+  margin: 0 0 2px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.status-line.warn {
+  color: #ffb4a8;
+}
+
+.meta-line {
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: #98a2b3;
+}
+
+.explanation {
+  margin: 0 0 12px;
+}
+
+.muted {
+  margin: 0;
+  color: #98a2b3;
+}
+
+.label {
+  margin: 14px 0 6px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #98a2b3;
+}
+
+.evidence {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.evidence > li + li {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #2a2e36;
+}
+
+.chip {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #232833;
+  color: #cbd2dc;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+.quote {
+  margin: 6px 0 4px;
+  padding: 8px 10px;
+  border-left: 2px solid #4a5160;
+  background: #0d0f12;
+  border-radius: 0 5px 5px 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: #d7dce5;
+}
+
+.interpretation {
+  margin: 0;
+  color: #b6bec9;
+}
+
+.limitations {
+  margin: 14px 0 0;
+  padding-left: 16px;
+  font-size: 11px;
+  color: #7d8695;
+}

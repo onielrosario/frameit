@@ -1,0 +1,2 @@
+// Holdout split — run rarely, never tuned against (docs/evaluation.md §2.3).
+// Empty on purpose. See GUIDELINES.md.

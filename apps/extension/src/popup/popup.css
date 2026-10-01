@@ -1,0 +1,56 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+}
+
+main {
+  padding: 14px 16px 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.tagline {
+  margin: 2px 0 14px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.field {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.field span {
+  display: block;
+  margin-bottom: 4px;
+  opacity: 0.7;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  font: inherit;
+  font-size: 12px;
+}
+
+.muted {
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+.footnote {
+  margin: 14px 0 0;
+  font-size: 11px;
+}

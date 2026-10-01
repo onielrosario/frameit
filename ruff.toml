@@ -1,0 +1,17 @@
+# One lint + format config for all Python in the repo (API, evaluation, marketing).
+line-length = 100
+target-version = "py312"
+extend-exclude = ["node_modules", ".venv"]
+
+[lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+ignore = [
+    "E501",    # line length is the formatter's job
+    "RUF001",  # the normalizer and its tests contain curly quotes, NBSPs, etc. on purpose
+    "RUF002",
+    "RUF003",
+    "B008",    # FastAPI's Depends(...) in a default argument is the framework's idiom
+]
+
+[lint.isort]
+known-first-party = ["app", "frame_eval", "tests"]

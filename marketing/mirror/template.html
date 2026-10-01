@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1080px; height: 1350px; background: #090A0D; color: #F2F4F7;
+         font-family: 'Inter', sans-serif; overflow: hidden; position: relative; }
+  .glowL { position: absolute; width: 760px; height: 760px; border-radius: 50%; top: -260px; left: -280px;
+           background: radial-gradient(circle, rgba(94,132,255,.22) 0%, rgba(94,132,255,0) 62%); }
+  .glowR { position: absolute; width: 760px; height: 760px; border-radius: 50%; bottom: -300px; right: -280px;
+           background: radial-gradient(circle, rgba(255,122,94,.16) 0%, rgba(255,122,94,0) 62%); }
+  .stage { position: relative; z-index: 2; height: 100%; padding: 60px 48px 50px;
+           display: flex; flex-direction: column; justify-content: center; }
+  .brandline { display: flex; align-items: center; gap: 11px; }
+  .logo { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg,#5E84FF,#8C6EFF);
+          display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; }
+  .brandname { font-size: 18px; font-weight: 700; letter-spacing: .14em; color: #D5DCE8; }
+  h1 { margin-top: 56px; font-size: 44px; line-height: 1.15; font-weight: 600; letter-spacing: -.025em; }
+  .subhead { margin-top: 12px; font-size: 20px; color: #7C879B; line-height: 1.4; }
+  .cols { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 22px;
+          align-items: start; }
+  .col { display: flex; flex-direction: column; gap: 16px; }
+  .tag { font-size: 13px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #6E7A8C; }
+  .paper { background: #FBFAF8; border-radius: 13px; padding: 20px 22px;
+           font-family: 'Newsreader', serif; font-size: 19px; line-height: 1.5; color: #22262C; }
+  .panel { background: #121419; border: 1px solid #23272F; border-radius: 14px; padding: 18px 20px; }
+  .verdict { font-size: 34px; font-weight: 700; letter-spacing: -.02em; line-height: 1.05; }
+  .sub { margin-top: 7px; font-size: 15px; color: #8A94A6; }
+  .evlabel { margin: 16px 0 9px; font-size: 11px; font-weight: 700; letter-spacing: .16em;
+             text-transform: uppercase; color: #6E7A8C; }
+  .ev { margin-bottom: 11px; }
+  .chip { display: inline-block; font-size: 13px; color: #C9D1DE; background: #232833;
+          border-radius: 999px; padding: 4px 10px; margin-bottom: 7px; }
+  .quote { font-family: 'JetBrains Mono', monospace; font-size: 13.5px; line-height: 1.45; color: #E6EBF3;
+           background: #0C0E12; border-left: 3px solid #3D6BFF; border-radius: 0 6px 6px 0; padding: 9px 11px; }
+  .why { margin-top: 7px; font-size: 14px; line-height: 1.45; color: #8A94A6; }
+  .verdictbar { margin-top: 26px; border-radius: 13px; padding: 20px 24px; display: flex;
+                align-items: center; justify-content: space-between; gap: 18px; }
+  .verdictbar.pass { background: rgba(61,107,255,.12); border: 1px solid rgba(61,107,255,.42); }
+  .verdictbar.fail { background: rgba(255,110,90,.10); border: 1px solid rgba(255,110,90,.45); }
+  .vtitle { font-size: 26px; font-weight: 700; letter-spacing: -.01em; }
+  .vtitle.pass { color: #A9BCFF; }
+  .vtitle.fail { color: #FFAC9B; }
+  .vdetail { margin-top: 5px; font-size: 15px; color: #8A94A6; line-height: 1.4; }
+  .checks { display: flex; flex-direction: column; gap: 5px; font-size: 13.5px; color: #8A94A6; text-align: right; }
+  .checks b { color: #C9D1DE; font-weight: 500; }
+  .foot { margin-top: 18px; display: flex; align-items: center; justify-content: space-between;
+          font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #59637A; }
+  .wip { border: 1px solid #23272F; border-radius: 999px; padding: 6px 13px; }
+</style>
+</head>
+<body>
+  <div class="glowL"></div><div class="glowR"></div>
+  <div class="stage">
+    <div class="brandline" style="position:absolute;top:60px;left:48px;"><div class="logo">F</div><div class="brandname">FRAME</div></div>
+    <h1 id="headline"></h1>
+    <div class="subhead" id="subhead"></div>
+    <div class="cols" id="cols"></div>
+    <div id="verdictbar"></div>
+    <div class="foot">
+      <div id="footnote">One pair · demonstrates the test, not the result</div>
+      <div class="wip">Work in progress</div>
+    </div>
+  </div>
+<script>
+const DATA = /*__DATA__*/ {};
+const esc = (t) => String(t == null ? "" : t).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const human = (v) => { const s = String(v || "").replace(/_/g, " ").trim();
+  return s ? s[0].toUpperCase() + s.slice(1) : "—"; };
+
+document.getElementById('headline').textContent = DATA.headline;
+document.getElementById('subhead').textContent = DATA.subhead;
+
+document.getElementById('cols').innerHTML = DATA.sides.map(side => `
+  <div class="col">
+    <div class="tag">Passage ${esc(side.label)}</div>
+    <div class="paper">${esc(side.text)}</div>
+    <div class="panel">
+      <div class="verdict">${esc(human(side.label_value))}</div>
+      <div class="sub">Confidence ${esc(side.confidence || "—")} · Evidence ${esc(side.strength || "—")}</div>
+      <div class="evlabel">Evidence</div>
+      ${side.evidence.map(e => `
+        <div class="ev">
+          <div class="chip">${esc(human(e.category))}</div>
+          <div class="quote">${esc(e.excerpt)}</div>
+          ${e.interpretation ? `<div class="why">${esc(e.interpretation)}</div>` : ""}
+        </div>`).join("")}
+    </div>
+  </div>`).join("");
+
+const v = DATA.verdict;
+document.getElementById('verdictbar').innerHTML = `
+  <div class="verdictbar ${v.passed ? 'pass' : 'fail'}">
+    <div>
+      <div class="vtitle ${v.passed ? 'pass' : 'fail'}">${v.passed ? 'SYMMETRIC' : 'ASYMMETRIC'}</div>
+      <div class="vdetail">${esc(v.detail)}</div>
+    </div>
+    <div class="checks">
+      ${v.checks.map(c => `<div>${c.ok ? '✓' : '✕'} <b>${esc(c.name)}</b></div>`).join("")}
+    </div>
+  </div>`;
+if (DATA.footnote) document.getElementById('footnote').textContent = DATA.footnote;
+window.__ready = true;
+</script>
+</body>
+</html>

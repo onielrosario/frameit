@@ -1,0 +1,102 @@
+{
+ "candidates": [
+  {
+   "content": {
+    "parts": [
+     {
+      "text": "{\n  \"content_assessment\": {\n    \"is_political\": true,\n    \"political_issues\": [\n      \"immigration policy\",\n      \"border security\"\n    ],\n    \"interpretation_risk\": \"none\"\n  },\n  \"signals\": [\n    {\n      \"category\": \"dehumanization\",\n      \"direction\": \"right\",\n      \"strength\": \"strong\",\n      \"excerpt\": \"These illegals are vermin pouring across our border, an infestation\",\n      \"interpretation\": \"Describes undocumented immigrants as pests or an infestation rather than human beings.\"\n    },\n    {\n      \"category\": \"us_vs_them\",\n      \"direction\": \"right\",\n      \"strength\": \"strong\",\n      \"excerpt\": \"They are not people like us.\",\n      \"interpretation\": \"Explicitly divides immigrants from the domestic population into an in-group and an alien out-group.\"\n    },\n    {\n      \"category\": \"fear_framing\",\n      \"direction\": \"right\",\n      \"strength\": \"strong\",\n      \"excerpt\": \"stop the invasion before it destroys everything we have built.\",\n      \"interpretation\": \"Frames immigration as an existential military threat posing imminent destruction.\"\n    }\n  ],\n  \"propaganda\": [\n    {\n      \"technique\": \"dehumanization\",\n      \"excerpt\": \"vermin pouring across our border, an infestation that is poisoning the blood\",\n      \"interpretation\": \"Portrays a demographic group using language associated with pests, disease, and biological contamination.\"\n    },\n    {\n      \"technique\": \"fear_appeal\",\n      \"excerpt\": \"stop the invasion before it destroys everything we have built.\",\n      \"interpretation\": \"Urges political action by framing the situation as an imminent, total threat to society.\"\n    },\n    {\n      \"technique\": \"us_vs_them\",\n      \"excerpt\": \"They are not people like us.\",\n      \"interpretation\": \"Draws a strict binary distinction between an out-group and the in-group.\"\n    }\n  ],\n  \"limitations\": [\n    \"very short passage\"\n  ]\n}",
+      "thought_signature": "EsMVCsAVAWkUfRNnLZkvISB6ozLiB2_ZvJXJsqWnpeETvFkH0ufbvDcinIRTiorCaK4ktvKUHqL_Nps3Ie1QNq16eFv4604MfXQ6SeAQGDt2H1FujpLQiho50ctpWtwcv5LdA96pXUPkThbd2vnqcwdg-wPCOBXbSBj3qznn4tornsjbf_PUtclat4dhtltqoxcbsX_jwmV56aarudVeb_dRcqaDmyAy2RZKl9TQdn-fbZmbUwd7xJbB60UDGDZsITyaXHCtfbP-S6TmGetkH_z6UacOWoyQxEhMibvC16QNXMnS2fDjnhVZChCdjd80dZ2K8pvgFGx3buP19BcRMnb7TNQ765T98q2QhxUlNJBhJC84dfWmNhme6p-6VHkhRMUK6y9T_RhtfhWzTWHv4ITbcTr3p_hCWMV7jUUw2TPQg_q19kgiTKzY_D-9vwphrDp5QN8ilYk2qEZeEDJAD-GWcLSJSZ7ww5rdDHW9bDywS4WNLmnwsZH11H3Ku8ITexhRkiApwAFM8Qr-M2dHQJw_to8oCHpdHFhsH4l0fwE2m2lwcJJClyn-hQetZ-Sc723DaC-Er4VyNjuJxypfr3G1nWhlxVsVpDVteNZVcpVqqq054Rv4IZ-lAPs_C4j9yvbD5b15CW88BZLp-zUZEyAqO3EFXXRzV0uXil9C2Wqa1BK2_MfcVykKd8UYfr5Rk9jigxjxITcasUL10qB7S0KEGDkXC-U8hfTyj0BfPoLCz-YVRinhq8hIYULIRvrlLb977NymAuo15vlLqAm6dHwthBN026Ugm5VBs0MxilixWrMxko5IvDueQueDKZEH3XLZz4OoOrhEUM3CGK8qLrJFqGzuD2Sz-Ctcs3nwNpQPvcgp88g3RkRPfDt-aMZEeH6Ty7EXVL4jbG1M2CHdXrdENexU7UzFqq8cDbvYmqRT2CWcyBo71BwPWtDO3DHx4P-4lES9Xp0Mp2Zknq73J0yPEP8sI4Y1LycpBJ2hG17IOYwC_kNpbRh_VNLSUCpeahjewYmV4uB_wvlY83mpfoh03ts31RrkpcviFcaFhMQOj7Sr7zFjXCxeNXQcgt9LP9FLKQE_sIRNHsFxBqsbt1Qwbv6aQDvZlpxc3jcMF2iWpT-eZeTTT3nLq23cSRJBiJPn3KRrqw9ULVm_QwXJ4sKVB27nOKxW0nALpKQ_Y94_B_02LW3zzCn4VYJWl3gBWadgzpy3HFdPGAoItb-t4ZnJC1kmbFjNltRoqLsJ6FS1eVEKHlcgG-V11ZLRo0Ahg9R3P7ljD59wcNgloqzvc7bGeWVYF3_RhLi7qDECFhcBWyLGrGcguH_XFNgK4OX-LoyPjMmZHxoluDlm_8i_EZ3vBF0whoa9HarMEN9CSbyweC8T6DqjPoIhoeQZuTNNP8YLHn6GsYvtxU0fY9BvcvVzBff0mjt_RuuMUzP1BZSzTg-1S-CQxZgWjd6mJzTY6wA9CBUnvGIaNkgCmm9rZ8XBw1VJ5cbHuJowEz5gwdmbUhZIK4IsuK61yIpgIYYNTx6FOcGxsqlUuaAQsyd-EwKTDwmS39ZnspFPBrMdrhRcpKaqSO5t5gnp1lTp2j7AxVrb5CqkwCGAl6jGXiZnE4Af-obMI_46qE9SHyo2SoW93TA3fUE244bXVhKbvJJf3EsJM6sQGsDEtWRygJR-GH7Tx1fOvDz3zbAWE8nqpO3HLZ8z0tPgDcUNCm7CjtimlgcT-IPnCUzp-4T-UyrJ2JN6828_asVuFg1rjjpGuWA_2Iy9HPmhhoWuW6ubbbCWjvVdEckXX1QH3IRU_X02lxLfU-c9HrdxC6pFVJzNXLxdEy5OKJjXEcLe8xJxFtDynP4V_ySJXF3ZPlPxapDQzuLYzyAZ7uxtWav-H1Pqm6ZFea-hoYBzBEQ-sS0HHC6kG29WqsN0Zl4X3tK8Mz19S0mcIWSezJc2EoCCrLy7hlPHAThbgkP8fk9fvpHwqMlp0OfRODsG0aIRnfdY_WhY4UPo4KZsJuZshsu2vpxD-Z2_BM8V5xYoUN60tVM85dIQNJmCOsolqS9058T2ILPzVD9xR-k6qPBeOtLnCDARCQX1giru6kvWyMKSyadk-BpmjTrFYjWVWE5by6vJEPpJ2ERZOAV9eQK3ZJ7DMsXdZEIq-Y0pmOTIxKN60WPL6uacBSfJxSAWbJZo6K9V5XfsSKNV6r8xIo-1IHPtkrphVAosOrkBE_AeAdxWqixIPRw-c2AnqvPeWQNUlF6UV4AYxF5HZfh-f7c8G3p33_hAEhCHfNZpsh1pm5fRVp2tnuvuorwhXn1fNm4JnS7QNTaRhVmI2LY7pPceQeFEXXhamss2KOebJeipGwQU7MabogwjVpUSr2PgoJR-FGL7Q6NcoVx0qUhNe_VFktwcD4hCVJkYcBS9HADJKzN1YE8EnuajtGp7IR8czDNRNo0p6pzYL6QeCTsL8Ongfs6tVLy_Sywoc_HzK7NOznR5A3mVCsrNWI-SSJDm48egnjkGdJXN0bBG8-16-sxcOkxF1xGnKobHukVFyaTCTTXrTp61eOmTFK5AmQx5Zuet0IPG5zWSLYh-J6fPnYXUwu9G5Ckf51JOhwK4PNLegLTqGcmTxfj_1U16N0jRr88-BxQ9O_tUpHLFut4EKfbRSkiAoeY42xcKmEU8RR4GDYAzLmlx3a4jXbZOvOsWlqg_6SGVf1I6yCsbAXb3lWFaoAQntJQeO1pgboQp_kwNzRAPXiPSVrfsO8mI0f1tTOeBj3CUeEpffkMSPkCA2Ex8JGGI1Vn_0ZIw-SAVg_QOqInx8QHke1waDHhfHrX0Pf2feH2i6ewvafypGGvQDaEbifbWhTJM9u_pgh-aAIKbUutaEIFVgMN6keDbB9rklBC5gZx1wtU-w71Z6B-Ge31GSwEHMpFBOYeVckua-R_FjFihHFah6AJYUBc7yg3eH78MIlYjN6Zx0Vx2TzbZrZBMWZHMqYwjNLrjhtpSMficEgFRFPVoAddCqZGeeW0pk-6gtMuAYDoEPhBoQDm1sCAOkv40vYNhFyracoKXZRNqdDlC3Dh0T860qlHSC0FbSisXnv2qIqyM8lN1BNRS84rZ6fn1E8iZmrjQnMm1-0gDIRfhscNFBtLXYtCaV3DKSCF-thd75dmUogIDC-QJGugEMaBu0CFdS10IE40yZVEJU3W7qcFPC_1xmIYGJLMQ7ss0sC55Vo9VO8UPN5oPzH92cPSEO39246E43fgFrYHjTPLHY2GChU6lRNcABjHexg6EnJFKAJX3sYYjUnHN6OptFnYW1wynfdFfesuD_oXZCAA4_hZnRd7a1zKZ_cbpNDQ0uEGPNT2Cfkcz9nfOrYNyKPw2af-1bENvEIWbrTtCOtvDhUSjNb2iO8f9MULwrYQjayoUqON3_LfYkWtSKWirLPsUH9a2j5NRZA2jAXEg4AvrmRe_2bqIFE-dxMbGgHOhyRh034gXKD72Z1MF-cX_u65OnxdfOjW98vJwWYkkiguYl9ZKRtdzc2_J53VQHfdyx07Dk4YJCOPNGVQ_P0vBvAarHuFY5lsnTZn1GZ8aocMd3e26y_yzSc_XyeSzXrDLCR6jnX5d_Qx0208bBx3J2tDkVE-iBg3ks56SoPa3_Sa8juVkVGlBWsLw5c0NC2JfZ92r-1qD__fvvO15-w=="
+     }
+    ],
+    "role": "model"
+   },
+   "finish_reason": "STOP",
+   "index": 0,
+   "safety_ratings": [
+    {
+     "category": "HARM_CATEGORY_HARASSMENT",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_HATE_SPEECH",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+     "probability": "NEGLIGIBLE"
+    },
+    {
+     "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+     "probability": "NEGLIGIBLE"
+    }
+   ]
+  }
+ ],
+ "model_version": "gemini-3.8-flash",
+ "response_id": "_pq8apSwE42l_PUP-YWiuAM",
+ "usage_metadata": {
+  "candidates_token_count": 477,
+  "prompt_token_count": 1265,
+  "prompt_tokens_details": [
+   {
+    "modality": "TEXT",
+    "token_count": 1265
+   }
+  ],
+  "thoughts_token_count": 605,
+  "total_token_count": 2347
+ },
+ "parsed": {
+  "content_assessment": {
+   "is_political": true,
+   "political_issues": [
+    "immigration policy",
+    "border security"
+   ],
+   "interpretation_risk": "none"
+  },
+  "signals": [
+   {
+    "category": "dehumanization",
+    "direction": "right",
+    "strength": "strong",
+    "excerpt": "These illegals are vermin pouring across our border, an infestation",
+    "interpretation": "Describes undocumented immigrants as pests or an infestation rather than human beings."
+   },
+   {
+    "category": "us_vs_them",
+    "direction": "right",
+    "strength": "strong",
+    "excerpt": "They are not people like us.",
+    "interpretation": "Explicitly divides immigrants from the domestic population into an in-group and an alien out-group."
+   },
+   {
+    "category": "fear_framing",
+    "direction": "right",
+    "strength": "strong",
+    "excerpt": "stop the invasion before it destroys everything we have built.",
+    "interpretation": "Frames immigration as an existential military threat posing imminent destruction."
+   }
+  ],
+  "propaganda": [
+   {
+    "technique": "dehumanization",
+    "excerpt": "vermin pouring across our border, an infestation that is poisoning the blood",
+    "interpretation": "Portrays a demographic group using language associated with pests, disease, and biological contamination."
+   },
+   {
+    "technique": "fear_appeal",
+    "excerpt": "stop the invasion before it destroys everything we have built.",
+    "interpretation": "Urges political action by framing the situation as an imminent, total threat to society."
+   },
+   {
+    "technique": "us_vs_them",
+    "excerpt": "They are not people like us.",
+    "interpretation": "Draws a strict binary distinction between an out-group and the in-group."
+   }
+  ],
+  "limitations": [
+   "very short passage"
+  ]
+ }
+}

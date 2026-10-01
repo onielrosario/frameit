@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frame — selection truncation fixture</title>
+    <style>
+      body { font: 14px/1.6 system-ui, sans-serif; margin: 0 auto; max-width: 46rem; padding: 24px 16px 80px; }
+      h1 { font-size: 18px; }
+      h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .06em; opacity: .6; margin-top: 32px; }
+      .block { border: 1px solid #8884; border-radius: 6px; padding: 12px 14px; }
+      .block p { margin: 0 0 1em; }
+      .block p:last-child { margin-bottom: 0; }
+      button { font: inherit; padding: 6px 12px; margin: 10px 8px 0 0; cursor: pointer; }
+      #readout { position: fixed; left: 0; right: 0; bottom: 0; background: #111; color: #fff;
+                  font: 13px/1.5 ui-monospace, monospace; padding: 10px 16px; }
+      code { background: #8882; padding: 1px 4px; border-radius: 3px; }
+    </style>
+  </head>
+  <body>
+    <h1>Selection truncation fixture</h1>
+    <p>
+      Stage 04 measurement for <code>apps/extension/docs/CONTEXT.md</code>. Click a
+      Select button, then right click inside the highlighted block and choose
+      <strong>Frame It</strong>. Read the result in the extension popup, or in the
+      service worker console at <code>chrome://extensions</code>.
+    </p>
+    <p>
+      The buttons select programmatically so the selection is exact and the run is
+      reproducible. Selecting by hand works too, but then the character count is
+      whatever you actually dragged over, not the number printed below.
+    </p>
+
+    <h2>Block A — exactly 5,000 characters, one paragraph</h2>
+    <div class="block" id="block-a"><p>emphasis context evidence clause measure anchor passage signal signal framing measure capture context sentence phrase narrative emphasis selection capture source attribution phrase excerpt paragraph evidence attribution language framing paragraph threshold sentence attribution sentence attribution language excerpt context context threshold document clause document document source signal document baseline claim interval measure selection emphasis excerpt emphasis anchor attribution signal paragraph document capture paragraph context framing context truncation segment context document phrase selection language sample sample baseline context sample boundary excerpt emphasis context attribution paragraph sentence narrative signal narrative boundary threshold attribution selection capture threshold anchor segment claim passage interval language signal sample language threshold threshold boundary attribution excerpt source sample clause truncation claim threshold capture language claim evidence paragraph narrative segment emphasis attribution phrase truncation baseline document emphasis evidence claim excerpt context boundary framing narrative source segment signal context clause interval claim framing claim context claim passage phrase threshold sample document document baseline interval paragraph signal context baseline language boundary context passage attribution measure baseline excerpt claim truncation framing source narrative boundary excerpt source sentence sentence source context truncation evidence boundary language sample language evidence narrative narrative narrative clause excerpt baseline interval passage baseline narrative capture anchor truncation emphasis claim narrative evidence paragraph selection context phrase sample threshold language anchor language emphasis boundary sample anchor narrative emphasis sample boundary emphasis threshold sample paragraph language anchor language narrative narrative attribution attribution emphasis selection language phrase emphasis sample document attribution passage claim narrative claim truncation evidence truncation measure threshold threshold document sentence segment clause narrative anchor measure signal sample language document truncation excerpt claim context interval anchor sentence threshold claim paragraph sample selection language threshold sentence interval sentence attribution claim measure anchor signal document attribution threshold interval language narrative measure baseline passage phrase attribution interval document narrative document excerpt segment threshold boundary truncation anchor clause measure measure language sentence framing language excerpt framing baseline attribution evidence measure sentence phrase sentence measure emphasis capture narrative language excerpt interval baseline claim paragraph capture phrase sentence anchor selection boundary framing signal narrative segment baseline evidence anchor capture document attribution baseline phrase passage narrative source signal phrase selection framing context paragraph source paragraph signal signal capture boundary measure language sentence context measure emphasis phrase anchor document measure evidence signal evidence baseline sentence source selection sample sample document segment phrase boundary signal threshold language threshold context paragraph anchor sample evidence sentence capture excerpt source document excerpt excerpt segment passage claim anchor document claim attribution capture framing segment excerpt framing threshold context evidence capture evidence anchor sentence segment baseline anchor selection signal selection emphasis sample document context source emphasis phrase excerpt document threshold framing interval narrative baseline claim capture boundary sentence truncation context document selection sentence boundary baseline baseline boundary measure passage attribution phrase baseline source interval claim passage sample signal baseline passage interval sentence baseline excerpt context source language truncation sentence source interval baseline signal signal measure threshold excerpt claim threshold source claim excerpt context framing baseline framing selection phrase paragraph signal sentence source sentence paragraph evidence excerpt excerpt truncation anchor interval truncation signal phrase evidence excerpt threshold anchor interval clause emphasis baseline sentence paragraph interval context document segment measure baseline emphasis anchor segment emphasis context source emphasis clause claim capture threshold selection boundary sentence measure selection measure paragraph claim context boundary sample truncation framing attribution excerpt capture boundary segment capture baseline paragraph source measure measure baseline framing passage selection signal boundary threshold source baseline sentence context signal phrase attribution anchor emphasis threshold anchor baseline phrase signal passage emphasis signal context passage narrative excerpt-xxx</p></div>
+    <button data-target="block-a">Select block A</button>
+
+    <h2>Block B — four paragraphs, tests whitespace collapsing</h2>
+    <div class="block" id="block-b">
+      <p>sentence truncation interval baseline capture segment capture attribution framing selection emphasis excerpt phrase evidence language narrative claim signal evidence attribution narrative threshold context baseline threshold segment excerpt clause passage threshold sample passage segment clause signal capture source segment framing clause capture passage selection sample passage language documentx</p>
+      <p>anchor selection signal measure excerpt excerpt document attribution selection measure capture interval context document measure claim excerpt measure narrative sample framing attribution interval framing context sentence passage signal excerpt evidence document baseline paragraph framing emphasis emphasis capture framing anchor segment capture excerpt paragraph boundary clause segment document-xx</p>
+      <p>segment measure claim document excerpt paragraph selection truncation language evidence anchor baseline source context threshold paragraph sample baseline clause narrative paragraph threshold language attribution truncation document sentence interval truncation context sentence anchor threshold paragraph claim sentence paragraph signal emphasis claim evidence interval segment narrative baseline-xx</p>
+      <p>selection anchor source signal excerpt segment narrative anchor selection capture paragraph baseline segment emphasis narrative language interval signal claim sentence baseline passage segment context evidence selection paragraph paragraph selection paragraph framing signal document emphasis baseline attribution baseline framing clause narrative framing anchor segment passage language source-xxxxx</p>
+    </div>
+    <button data-target="block-b">Select block B</button>
+
+    <div id="readout">no selection</div>
+
+    <script>
+      const readout = document.getElementById("readout");
+
+      function describe() {
+        const sel = window.getSelection();
+        const text = sel ? sel.toString() : "";
+        const newlines = (text.match(/\n/g) || []).length;
+        readout.textContent = text.length
+          ? `selection: ${text.length} chars, ${newlines} newline(s) — now right click inside it and choose Frame It`
+          : "no selection";
+      }
+
+      for (const button of document.querySelectorAll("button[data-target]")) {
+        button.addEventListener("click", () => {
+          const node = document.getElementById(button.dataset.target);
+          const sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.selectAllChildren(node);
+          describe();
+        });
+      }
+
+      document.addEventListener("selectionchange", describe);
+    </script>
+  </body>
+</html>

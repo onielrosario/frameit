@@ -1,0 +1,96 @@
+# Frame — .gitignore
+#
+# Two rules from CLAUDE.md shape this file:
+#   - Context docs are committed. There is deliberately NO blanket *.md ignore.
+#   - `.claude/` is gitignored.
+# The eval dataset is version-controlled (ADR-0004) and is deliberately NOT ignored.
+
+# ---------- Secrets ----------
+# Never relax these. The extension bundle is public (threat-model.md §5); anything
+# that leaks here is public the moment the repo flips.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+.secrets/
+service-account*.json
+gcp-*.json
+
+# Chrome extension signing key. The public `key` in manifest.json is fine to commit;
+# the .pem that generates it is not. Covered by *.pem above, named here so nobody
+# "fixes" the glob without understanding it.
+key.pem
+*.crx
+
+# ---------- Agent / editor local state ----------
+.claude/
+.cursor/
+.aider*
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ---------- Node / TypeScript / Vite ----------
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+# Lockfiles are committed on purpose. Do not add them here.
+
+# ---------- Next.js ----------
+.next/
+out/
+
+# ---------- Python / FastAPI ----------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+coverage/
+
+# ---------- Hosting / tooling ----------
+.vercel/
+.turbo/
+
+# ---------- Local scratch ----------
+*.log
+logs/
+tmp/
+scratch/
+.local/
+
+# ---------- Local-only assets ----------
+# Concept mockups. Kept out of the public repo: they show evidence that is not in the
+# selected text and a position needle (Q1 is open) — the opposite of what Frame promises.
+Claude outputs/
+
+# ---------- OS ----------
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
